@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace bmi__calc
+{
+
+  
+    internal class Program
+    {
+
+        static void Main(string[] args)
+        {
+            // creating this bmi calc using if statements
+            Console.WriteLine("Your weight(kg):  ");
+            double weight =double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Your height(m): ");
+           double height= double.Parse(Console.ReadLine());
+
+           double bmi=weight/(height*height);
+            Console.WriteLine($"your BMI is : {bmi}");
+            Console.ReadLine();    
+
+        }
+    }
+}
